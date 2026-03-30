@@ -1,0 +1,19 @@
+.navStyle{
+    background: rgba(10,11,16,0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    z-index: 100;
+}
+.nav-logo{
+    color: var(--text);
+    letter-spacing: -0.5px;
+}
+.nav-cta{
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+}
+.nav-cta:hover { 
+    opacity: 0.88;
+    transform: translateY(-1px); 
+}
