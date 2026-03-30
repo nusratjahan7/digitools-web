@@ -1,0 +1,9 @@
+.banner-title .highlight {
+    background: linear-gradient(135deg, var(--accent2), var(--accent3));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.banner-cta:hover { 
+    opacity: 0.88;
+    transform: translateY(-1px); 
+}
