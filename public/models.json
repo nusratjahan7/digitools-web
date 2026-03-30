@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "ResumeAI Pro",
+    "description": "AI-powered resume builder with ATS optimization, smart suggestions, and beautiful templates trusted by top job seekers.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ professional templates", "ATS optimization engine", "AI content suggestions", "Export to PDF & DOCX"],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "DesignKit Ultra",
+    "description": "A comprehensive Figma & Sketch design system with 2000+ components, icons, and UI kits for fast product design.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["2000+ UI components", "Figma & Sketch files", "Dark & light variants", "Lifetime updates included"],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "DataDash Analytics",
+    "description": "Real-time analytics dashboard with beautiful charts, custom reports, and team collaboration for data-driven decisions.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "bestseller",
+    "features": ["Real-time data tracking", "Custom chart builder", "CSV & API imports", "Team sharing & export"],
+    "icon": "📊"
+  },
+  {
+    "id": 4,
+    "name": "CodeSnap Pro",
+    "description": "Create stunning code screenshots for presentations, social media, and documentation with syntax highlighting.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["50+ syntax themes", "Custom backgrounds", "Window frame styles", "Bulk export support"],
+    "icon": "💻"
+  },
+  {
+    "id": 5,
+    "name": "LinkForge CRM",
+    "description": "Lightweight CRM built for freelancers and small teams to manage leads, deals, and client relationships effortlessly.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Contact & deal pipeline", "Email integration", "Activity timeline", "Invoice generation"],
+    "icon": "🔗"
+  },
+  {
+    "id": 6,
+    "name": "PaperMind Notes",
+    "description": "A markdown-first note-taking app with linked notes, daily journaling, and AI-powered summaries for deep thinkers.",
+    "price": 8,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "bestseller",
+    "features": ["Markdown + rich text editor", "Bidirectional note linking", "AI summarization", "Offline & sync support"],
+    "icon": "📝"
+  },
+  {
+    "id": 7,
+    "name": "VideoGlow Editor",
+    "description": "Browser-based video editor with transitions, captions, and branding tools for creators publishing across all platforms.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Timeline-based editor", "Auto-captions (AI)", "Brand kit & watermarks", "4K export support"],
+    "icon": "🎬"
+  },
+  {
+    "id": 8,
+    "name": "FormBuilder X",
+    "description": "Drag-and-drop form and survey builder with conditional logic, integrations, and powerful response analytics.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Visual drag-and-drop builder", "Conditional logic flows", "Zapier & webhook support", "Response analytics dashboard"],
+    "icon": "📋"
+  },
+  {
+    "id": 9,
+    "name": "SEO Pulse",
+    "description": "All-in-one SEO toolkit for keyword research, site audits, rank tracking, and competitor analysis for growing websites.",
+    "price": 24,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "bestseller",
+    "features": ["Keyword research engine", "On-page SEO audit", "SERP rank tracker", "Competitor gap analysis"],
+    "icon": "🔍"
+  }
+]

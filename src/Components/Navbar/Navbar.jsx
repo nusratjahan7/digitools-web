@@ -61,7 +61,7 @@ const Navbar = () => {
                 <button className='cart-btn btn'>
                     <ShoppingCart></ShoppingCart>
                 </button>
-                <span class=" bg-(--accent) font-bold h-5 w-5 rounded-full flex items-center justify-center absolute p-2 top-2.5 right-36" id="cartCount">0</span>
+                <span className=" bg-(--accent) font-bold h-5 w-5 rounded-full flex items-center justify-center absolute p-2 top-2.5 right-36" id="cartCount">0</span>
             </div>
             <button className='ml-4 bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-4 rounded-full nav-cta'>Get Started</button>
             </div>
