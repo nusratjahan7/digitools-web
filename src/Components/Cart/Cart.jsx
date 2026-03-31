@@ -1,13 +1,24 @@
 import { ShoppingCart, X } from 'lucide-react';
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Cart = ({carts, setCarts}) => {
     const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
     const handlePayment = () => {
         setCarts([])
+        toast.success("Payment Successful",
+            {
+            duration: 500,
+            style: {
+            background: '#14161f',
+            color: '#fff',
+            border: '1px solid #374151'
+            }
+        });
     }
+    
    return (
-    <div className='pt-7'>
+    <div className='pt-7 sm:mx-10 md:mx-28 lg:mx-64'>
       <h1 className='text-2xl font-bold mb-4'>Your Cart</h1>
 
       {carts.length === 0 ? (
@@ -57,9 +68,17 @@ const Cart = ({carts, setCarts}) => {
               <div>
                 <button
                   className='btn btn-outline btn-error font-semibold border flex items-center gap-2'
-                  onClick={() =>
-                    setCarts(carts.filter(c => c.id !== cart.id))
-                  }
+                  onClick={() => {
+                    setCarts(carts.filter(c => c.id !== cart.id));
+                    toast.error("Item Removed", {
+                        duration: 500,
+                        style: {
+                          background: '#14161f',
+                          color: '#fff',
+                          border: '1px solid #374151'
+                          }
+                        });
+                  }}
                 >
                   <X className='w-5 h-5' /> <span className='hidden sm:block'>Remove</span>
                 </button>

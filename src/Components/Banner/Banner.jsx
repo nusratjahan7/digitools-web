@@ -5,7 +5,7 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <section className='banner w-11/12 py-20 mx-auto flex flex-col md:flex-row items-center justify-between'>
+        <section className='banner w-11/12 py-10 mx-auto flex flex-col md:flex-row items-center justify-between'>
             <div className='banner-content space-y-4'>
                 <p className='banner-badge flex items-center bg-[rgba(108,99,255,0.15)] border border-[rgba(108,99,255,0.35)] px-3 py-1 md:w-1/2 w-2/4 rounded-full'>
                     <span className='animate-pulse opacity-10 mr-2'>✦</span>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PricingFeatures from './PricingFeatures';
+import { toast } from 'react-toastify';
 
 const ModelsCard = ({model, carts, setCarts}) => {
      const {name, price, period, description, features, tagType, icon} = model;
@@ -14,9 +15,31 @@ const currentStyle = badgeStyle[tagType];
 
 const [isSubscribe, setIsSubscribe] = useState(false);
 const handleSubscription = () => {
-    setIsSubscribe(true)
-    setCarts([...carts, model])
-}
+    setIsSubscribe(true);
+
+    const isFound = carts.find(item => item.id === model.id)
+    if(isFound) {
+        toast.error("Item already in the cart", {
+        duration: 500,
+        style: {
+       background: '#14161f',
+       color: '#fff',
+       border: '1px solid #374151'
+      }
+    });
+    return
+    };
+
+    setCarts([...carts, model]);
+    toast.success("Item added to cart", {
+    duration: 500,
+    style: {
+      background: '#14161f',
+      color: '#fff',
+      border: '1px solid #374151'
+      }
+    });
+};
 
     return (
          <div className="card w-full bg-base-100 shadow-sm">

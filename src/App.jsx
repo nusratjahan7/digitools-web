@@ -24,7 +24,7 @@ const [carts, setCarts] = useState([])
   return (
     <>
           <header>
-            <Navbar></Navbar>
+            <Navbar carts={carts}></Navbar>
           </header>
           <main>
             <Banner></Banner>
@@ -39,7 +39,7 @@ const [carts, setCarts] = useState([])
             defaultChecked />
             <input type="radio" name="my_tabs_1" className={`tab flex-1 ${
           activeTab === "cart" ? "[--tab-bg:var(--accent)] text-white" : ""
-        }`} aria-label="Cart"
+        }`} aria-label={`Cart (${carts.length})`}
             onClick={() => setActiveTab("cart")} />
         </div>
 
