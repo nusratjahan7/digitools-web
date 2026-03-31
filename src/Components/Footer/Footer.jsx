@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-6 justify-center sm:justify-normal">
              <div className='nav-logo text-4xl font-bold flex items-center gap-2 '>
                 <div className='logo-dot w-2 h-2 rounded-full bg-(--accent) inline-block'></div>
-                <h1>Digi <span className='text-(--accent2)'>Logo</span></h1>
+                <h1>Digi <span className='text-(--accent2)'>Tools</span></h1>
             </div>
             
             </div>
