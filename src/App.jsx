@@ -53,6 +53,7 @@ const [carts, setCarts] = useState([])
            
           </section>           
           <GetStarted></GetStarted>
+          
           </main>    
     </>
   )
