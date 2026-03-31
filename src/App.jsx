@@ -8,6 +8,7 @@ import Stats from './Components/Stats/Stats'
 import Cart from './Components/Cart/Cart'
 
 import ModelHeder from './Components/Models/ModelHeder'
+import GetStarted from './Components/getStarted/getStarted'
 
 
 function App() { 
@@ -50,8 +51,8 @@ const [carts, setCarts] = useState([])
           activeTab === "cart" && <Cart carts={carts} setCarts={setCarts}></Cart>
         }
            
-           </section>           
-        
+          </section>           
+          <GetStarted></GetStarted>
           </main>    
     </>
   )
