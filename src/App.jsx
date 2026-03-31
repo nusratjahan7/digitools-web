@@ -11,6 +11,8 @@ import ModelHeder from './Components/Models/ModelHeder'
 import GetStarted from './Components/getStarted/getStarted'
 import PricingSection from './Components/PricingSection/PricingSection'
 import WorkFlow from './Components/WorkFlow/WorkFlow'
+import Footer from './Components/Footer/Footer'
+
 
 const pricingPromise = fetch('/Pricing.json').then(res => res.json());
 
@@ -60,6 +62,9 @@ const [carts, setCarts] = useState([])
           <PricingSection pricingPromise={pricingPromise}/>
           <WorkFlow></WorkFlow>
           </main>    
+          <footer>
+            <Footer></Footer>
+          </footer>
     </>
   )
 }
