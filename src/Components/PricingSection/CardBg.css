@@ -1,0 +1,10 @@
+.cardBg{
+    background: rgba(107, 99, 255, 0.041);
+    border: 2px solid var(--border);
+}
+.cardBg::before{
+    content: '';
+    position: absolute; 
+    inset: 0;
+    background: radial-gradient(ellipse 90% 50% at 50% 0%, rgba(107, 99, 255, 0.24) 0%, transparent 70%);
+}

@@ -9,7 +9,9 @@ import Cart from './Components/Cart/Cart'
 
 import ModelHeder from './Components/Models/ModelHeder'
 import GetStarted from './Components/getStarted/getStarted'
+import PricingSection from './Components/PricingSection/PricingSection'
 
+const pricingPromise = fetch('/Pricing.json').then(res => res.json());
 
 function App() { 
 const [models, setModels] = useState([]);
@@ -19,6 +21,7 @@ useEffect(() => {
     .then(res => res.json())
     .then(data => setModels(data));
 }, []);
+
 
 const [activeTab, setActiveTab] = useState("products");
 const [carts, setCarts] = useState([])
@@ -53,7 +56,7 @@ const [carts, setCarts] = useState([])
            
           </section>           
           <GetStarted></GetStarted>
-          
+          <PricingSection pricingPromise={pricingPromise}/>
           </main>    
     </>
   )
