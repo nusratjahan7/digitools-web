@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PricingFeatures from './PricingFeatures';
 
-const ModelsCard = ({model}) => {
-     const {name, price, period, description, features, tagType} = model;
+const ModelsCard = ({model, carts, setCarts}) => {
+     const {name, price, period, description, features, tagType, icon} = model;
 
      const badgeStyle = {
         new: { text: "New Arrival", className: "badge-info " },         
@@ -15,6 +15,7 @@ const currentStyle = badgeStyle[tagType];
 const [isSubscribe, setIsSubscribe] = useState(false);
 const handleSubscription = () => {
     setIsSubscribe(true)
+    setCarts([...carts, model])
 }
 
     return (
@@ -26,7 +27,8 @@ const handleSubscription = () => {
                 {currentStyle.text}
              </span>
          }
-            <div className="flex justify-between">
+         <p className='text-2xl'>{icon}</p>
+            <div className="flex flex-col gap-1.5">
               <h2 className="text-3xl font-bold">{name}</h2>
       <span className="text-xl">${price}/{period}</span>
      </div>
