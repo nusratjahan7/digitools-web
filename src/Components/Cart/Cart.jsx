@@ -36,7 +36,7 @@ const Cart = ({carts, setCarts}) => {
         </p>
         
         <button 
-          onClick={() => window.location.href = '/products'}
+          onClick={() => window.location.href = '#'}
           className="bg-(--accent)  text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
         >
           Browse Products

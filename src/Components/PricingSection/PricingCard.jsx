@@ -1,5 +1,6 @@
 import React from 'react';
 import PricingFeatures from './PricingFeatures';
+import './CardBg.css';
 
 
 const PricingCard = ({pricing}) => {
