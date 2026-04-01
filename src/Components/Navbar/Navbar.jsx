@@ -58,8 +58,8 @@ const Navbar = ({ carts }) => {
             </ul>
             <div className='flex justify-between'>
             <div >
-                <button className='cart-btn btn bg-(--surface2)'>
-                    <ShoppingCart></ShoppingCart>
+                <button className='cart-btn btn bg-(--surface2) outline-none'>
+                    <ShoppingCart className="text-white"></ShoppingCart>
                 </button>
                 <span className=" bg-(--accent) font-bold h-5 w-5 rounded-full flex items-center justify-center absolute p-2 top-2.5 sm:right-36" id="cartCount">{carts.length}</span>
             </div>
