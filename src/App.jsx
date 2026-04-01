@@ -40,11 +40,11 @@ const [carts, setCarts] = useState([])
            <ModelHeder></ModelHeder>
            
             <div className="tabs tabs-box bg-(--surface) border border-(--border) w-48 mx-auto my-4">
-            <input type="radio" name="my_tabs_1" className={`tab flex-1  ${
+            <input type="radio" name="my_tabs_1" className={`tab flex-1 text-(--text2)  ${
           activeTab === "products" ? "[--tab-bg:var(--accent)] text-white" : ""}`} aria-label="Products"
              onClick={() => setActiveTab("products")}
             defaultChecked />
-            <input type="radio" name="my_tabs_1" className={`tab flex-1 ${
+            <input type="radio" name="my_tabs_1" className={`tab flex-1 text-(--text2) ${
           activeTab === "cart" ? "[--tab-bg:var(--accent)] text-white" : ""
         }`} aria-label={`Cart (${carts.length})`}
             onClick={() => setActiveTab("cart")} />
