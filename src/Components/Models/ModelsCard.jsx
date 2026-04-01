@@ -42,7 +42,7 @@ const handleSubscription = () => {
 };
 
     return (
-         <div className="card w-full bg-base-100 shadow-sm">
+         <div className="card w-full bg-(--surface) shadow-sm">
                 <div className="card-body">
          { tagType
              &&
