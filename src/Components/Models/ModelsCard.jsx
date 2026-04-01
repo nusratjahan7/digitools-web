@@ -46,7 +46,7 @@ const handleSubscription = () => {
                 <div className="card-body">
          { tagType
              &&
-             <span className={`badge badge-xs  px-2 font-bold ${currentStyle.className}`}>
+             <span className={`badge badge-md mb-2 px-2 font-bold ${currentStyle.className}`}>
                 {currentStyle.text}
              </span>
          }
