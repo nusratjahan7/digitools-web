@@ -44,12 +44,14 @@ const handleSubscription = () => {
     return (
          <div className="card w-full bg-(--surface) shadow-sm">
                 <div className="card-body">
+
          { tagType
              &&
              <span className={`badge badge-md mb-2 px-2 font-bold ${currentStyle.className}`}>
                 {currentStyle.text}
              </span>
          }
+         
          <p className='text-2xl'>{icon}</p>
             <div className="flex flex-col gap-1.5">
               <h2 className="text-3xl font-bold">{name}</h2>
