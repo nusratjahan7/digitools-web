@@ -8,7 +8,7 @@ import Stats from './Components/Stats/Stats'
 import Cart from './Components/Cart/Cart'
 
 import ModelHeder from './Components/Models/ModelHeder'
-import GetStarted from './Components/getStarted/getStarted'
+import GetStarted from './Components/GetStarted/GetStarted'
 import PricingSection from './Components/PricingSection/PricingSection'
 import WorkFlow from './Components/WorkFlow/WorkFlow'
 import Footer from './Components/Footer/Footer'
